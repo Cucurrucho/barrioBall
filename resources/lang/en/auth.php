@@ -27,7 +27,6 @@ return [
     'forgetMe' => 'forget your password',
     'currentLanguage' => 'English',
 	'username' => 'Username',
-    'currentLanguage' => 'English',
     'Edit' => 'Edit User'
 
 ];

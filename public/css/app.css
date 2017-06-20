@@ -671,7 +671,6 @@ mark,
   background-color: #f5f8fa;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   max-width: 100%;
   height: auto;
@@ -2091,7 +2090,6 @@ pre code {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
@@ -2449,7 +2447,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   border-radius: 0.25rem;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2885,7 +2882,6 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 
@@ -2913,7 +2909,6 @@ tbody.collapse.show {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
   transition: height 0.35s ease;
 }
 
@@ -4340,10 +4335,8 @@ tbody.collapse.show {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
   }
   .card-columns .card {
@@ -4693,7 +4686,6 @@ a.badge:focus, a.badge:hover {
 }
 
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 1rem 1rem;
 }
@@ -5022,7 +5014,6 @@ button.close {
 }
 
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -5425,7 +5416,6 @@ button.close {
 
 @media (-webkit-transform-3d) {
   .carousel-item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
@@ -5438,7 +5428,6 @@ button.close {
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
   .carousel-item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
@@ -8999,7 +8988,6 @@ body.swal2-iosfix {
 }
 
 .swal2-container.swal2-fade {
-  -webkit-transition: background-color .1s;
   transition: background-color .1s;
 }
 
@@ -9124,7 +9112,6 @@ body.swal2-iosfix {
   right: 8px;
   cursor: pointer;
   color: #cccccc;
-  -webkit-transition: color .1s ease;
   transition: color .1s ease;
 }
 
@@ -9172,7 +9159,6 @@ body.swal2-iosfix {
   border-radius: 3px;
   border: 1px solid #d9d9d9;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
-  -webkit-transition: border-color box-shadow .3s;
   transition: border-color box-shadow .3s;
 }
 
@@ -9194,7 +9180,6 @@ body.swal2-iosfix {
 .swal2-modal .swal2-input:focus::-webkit-input-placeholder,
 .swal2-modal .swal2-file:focus::-webkit-input-placeholder,
 .swal2-modal .swal2-textarea:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity .3s .03s ease;
   transition: opacity .3s .03s ease;
   opacity: .8;
 }
@@ -9202,15 +9187,6 @@ body.swal2-iosfix {
 .swal2-modal .swal2-input:focus:-ms-input-placeholder,
 .swal2-modal .swal2-file:focus:-ms-input-placeholder,
 .swal2-modal .swal2-textarea:focus:-ms-input-placeholder {
-  -webkit-transition: opacity .3s .03s ease;
-  transition: opacity .3s .03s ease;
-  opacity: .8;
-}
-
-.swal2-modal .swal2-input:focus::-moz-placeholder,
-.swal2-modal .swal2-file:focus::-moz-placeholder,
-.swal2-modal .swal2-textarea:focus::-moz-placeholder {
-  -webkit-transition: opacity .3s .03s ease;
   transition: opacity .3s .03s ease;
   opacity: .8;
 }
@@ -9218,7 +9194,6 @@ body.swal2-iosfix {
 .swal2-modal .swal2-input:focus::placeholder,
 .swal2-modal .swal2-file:focus::placeholder,
 .swal2-modal .swal2-textarea:focus::placeholder {
-  -webkit-transition: opacity .3s .03s ease;
   transition: opacity .3s .03s ease;
   opacity: .8;
 }
@@ -9232,12 +9207,6 @@ body.swal2-iosfix {
 .swal2-modal .swal2-input:-ms-input-placeholder,
 .swal2-modal .swal2-file:-ms-input-placeholder,
 .swal2-modal .swal2-textarea:-ms-input-placeholder {
-  color: #e6e6e6;
-}
-
-.swal2-modal .swal2-input::-moz-placeholder,
-.swal2-modal .swal2-file::-moz-placeholder,
-.swal2-modal .swal2-textarea::-moz-placeholder {
   color: #e6e6e6;
 }
 
@@ -9961,7 +9930,6 @@ html, body, #app {
     height: 100%;
   }
   .flip-container > .flipper {
-    -webkit-transition: 1s;
     transition: 1s;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -10216,7 +10184,6 @@ html, body, #app {
 
 .leaflet-fade-anim .leaflet-popup {
   opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
 
@@ -10234,7 +10201,6 @@ html, body, #app {
 }
 
 .leaflet-zoom-anim .leaflet-zoom-animated {
-  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1);
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1), -webkit-transform 0.25s cubic-bezier(0, 0, 0.25, 1);
@@ -10242,7 +10208,6 @@ html, body, #app {
 
 .leaflet-zoom-anim .leaflet-tile,
 .leaflet-pan-anim .leaflet-tile {
-  -webkit-transition: none;
   transition: none;
 }
 
@@ -10990,7 +10955,6 @@ a.bg-white:focus, a.bg-white:hover {
 }
 
 #search-page {
-  -webkit-transition: padding 1s linear;
   transition: padding 1s linear;
 }
 
