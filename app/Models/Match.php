@@ -26,7 +26,9 @@ class Match extends Model
 			->withPivot('role');
 	}
 
-	public function addUser(User $user, bool $manager = false){
+	public function addUser(User $user, bool $manager = null){
+
+
 		$this->users()->attach($user,[
 			'role' => $manager ? 'manager' : 'player'
 		]);
