@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 
 
 
+use App\Http\Requests\DeleteUserRequest;
 use App\Http\Requests\UpdateEmailRequest;
 use App\Http\Requests\UpdateLanguageRequest;
 use App\Http\Requests\UpdatePasswordRequest;
 use App\Http\Requests\UpdateUsernameRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -58,11 +60,11 @@ class UserController extends Controller
         return back()->with('alert', $message);
     }
 
-    public function destroy()
+    public function destroy(DeleteUserRequest $request)
     {
         //
-        $user = Auth::user();
-        $user->delete();
+        $user = $request->commit();
+
 
         return redirect('/home');
     }
