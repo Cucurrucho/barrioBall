@@ -28,7 +28,7 @@ class UserController extends Controller
 
     public function updateUsername(UpdateUsernameRequest $request)
     {
-        $user = $request->commit($request->user());
+        $user = $request->commit();
         $message =  __('profile/update.updatedUsername');
         return back()->with('alert', $message);
     }
@@ -37,7 +37,7 @@ class UserController extends Controller
     {
 
 
-        $user = $request->commit($request->user());
+        $user = $request->commit();
         $message = __('profile/update.updatedPassword');
         return back()->with('alert', $message);
     }
@@ -45,7 +45,7 @@ class UserController extends Controller
     public function updateEmail(UpdateEmailRequest $request)
     {
 
-        $user = $request->commit($request->user());
+        $user = $request->commit();
         $message = __('profile/update.updatedEmail');
         return back()->with('alert', $message);
     }
@@ -53,7 +53,7 @@ class UserController extends Controller
     public function updateLanguage(UpdateLanguageRequest $request)
     {
 
-        $user = $request->commit($request->user());
+        $user = $request->commit();
         $message = __('profile/update.updatedLanguage');
         return back()->with('alert', $message);
     }
